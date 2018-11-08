@@ -81,3 +81,5 @@ clustergrammer
 
 # Excel Backup File
 *.xlk
+
+data/big_data
