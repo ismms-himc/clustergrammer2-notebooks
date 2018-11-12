@@ -1,6 +1,6 @@
 # View Notebook NBViewer
 
-[![Nbviewer](https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg)](http://nbviewer.jupyter.org/github/ismms-himc/clustergrammer2_examples/blob/master/notebooks/1.0_Clustergrammer2_Example_Notebook.ipynb)
+[![Nbviewer](https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg)](http://nbviewer.jupyter.org/github/ismms-himc/clustergrammer2_examples/blob/master/notebooks/1.0_Clustergrammer2_Example_Notebook.ipynb?flush_cache=true)
 
 # Launch Notebooks in Mybinder
 
