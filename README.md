@@ -7,7 +7,8 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ismms-himc/clustergrammer2_examples/master?urlpath=lab)
 
-# 1.0 Example Notebooks with Toy dataset
+# 1.0 Example Notebooks
+These notebooks show how Clustergrammer2 can be used on a simple 'toy' dataset.
 
 ### View Notebook on NBViewer
 
@@ -15,3 +16,5 @@
 
 ### Launch Notebook
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ismms-himc/clustergrammer2_examples/master?filepath=notebooks%2F1.0_Clustergrammer2_Example_Notebook.ipynb)
+
+2.0
