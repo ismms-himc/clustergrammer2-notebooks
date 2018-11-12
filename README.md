@@ -1,4 +1,4 @@
-# Launch Mybinder
+# Launch Clustergrammer2 Example Notebooks in Mybinder
 
 ### Launch Jupyter Notebook on Mybinder
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ismms-himc/clustergrammer2_examples/master)
@@ -7,17 +7,17 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ismms-himc/clustergrammer2_examples/master?urlpath=lab)
 
-# 1.0 Example Notebooks
+### 1.0 Example Notebooks
 These notebooks show how Clustergrammer2 can be used on a simple 'toy' dataset.
 
-### View Notebook on NBViewer
+#### View Notebook on NBViewer
 
 [![Nbviewer](https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg)](http://nbviewer.jupyter.org/github/ismms-himc/clustergrammer2_examples/blob/master/notebooks/1.0_Clustergrammer2_Example_Notebook.ipynb?flush_cache=true)
 
-### Launch Notebook
+#### Launch Notebook
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ismms-himc/clustergrammer2_examples/master?filepath=notebooks%2F1.0_Clustergrammer2_Example_Notebook.ipynb)
 
-# 2.0 CCLE Gene Expression
+### 2.0 CCLE Gene Expression
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ismms-himc/clustergrammer2_examples/master?filepath=notebooks%2F2.0_CCLE_Gene_Expression.ipynb)
 
