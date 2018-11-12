@@ -19,6 +19,6 @@ These notebooks show how Clustergrammer2 can be used on a simple 'toy' dataset.
 
 # 2.0 CCLE Gene Expression
 
-Launch `2.0_CCLE_Gene_Expression.ipynb` notebooks. This notebook will use the Clustergrammer2 to visualize the Cancer cell line Encyclopedia gene expression data (produced at the [Broad-Institute](https://portals.broadinstitute.org/ccle)). The CCLE project measured genetic data from over 1000 cancer cell lines
-
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ismms-himc/clustergrammer2_examples/master?filepath=notebooks%2F2.0_CCLE_Gene_Expression.ipynb)
+
+The `2.0_CCLE_Gene_Expression.ipynb` notebook uses Clustergrammer2 to visualize the Cancer cell line Encyclopedia gene expression data (produced at the [Broad-Institute](https://portals.broadinstitute.org/ccle)). The CCLE project measured genetic data from over 1000 cancer cell lines
