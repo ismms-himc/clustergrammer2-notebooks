@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 
 def sim_same_and_diff_category_samples(df, cat_index=1, dist_type='cosine',
                                        equal_var=False, plot_roc=True,
-                                       precalc_dist=False):
+                                       precalc_dist=False, calc_roc=True):
     '''
     Calculate the similarity of samples from the same and different categories. The
     cat_index gives the index of the category, where 1 in the first category.
@@ -29,16 +29,19 @@ def sim_same_and_diff_category_samples(df, cat_index=1, dist_type='cosine',
 
     # generate sample names with categories
     sample_combos = list(combinations(range(df.shape[1]),2))
-    sample_names = [(cols[x[0]][cat_index] + '_' + cols[x[1]][cat_index], cols[x[0]][cat_index], cols[x[1]][cat_index])
-                    for x in sample_combos]
+
+    sample_names = [str(ind) + '_same' if cols[x[0]][cat_index] == cols[x[1]][cat_index] else str(ind) + '_different' for ind, x in enumerate(sample_combos)]
 
     ser_dist = pd.Series(data=dist_arr, index=sample_names)
 
     # find same-cat sample comparisons
-    same_cat = [x for x in sample_names if x[1] == x[2]]
+    same_cat = [x for x in sample_names if x.split('_')[1] == 'same']
 
     # find diff-cat sample comparisons
-    diff_cat = [x for x in sample_names if x[1] != x[2]]
+    diff_cat = [x for x in sample_names if x.split('_')[1] == 'different']
+
+    print('numer of combos', len(sample_names))
+    print(len(same_cat), len(diff_cat), len(same_cat) + len(diff_cat))
 
     # make series of same and diff category sample comparisons
     ser_same = ser_dist[same_cat]
@@ -55,38 +58,37 @@ def sim_same_and_diff_category_samples(df, cat_index=1, dist_type='cosine',
 
     ttest_stat, pval_dict['mannwhitney'] = mannwhitneyu(ser_diff, ser_same)
 
-    # calc AUC
-    true_index = list(np.ones(sim_dict['same'].shape[0]))
-    false_index = list(np.zeros(sim_dict['diff'].shape[0]))
-    y_true = true_index + false_index
-
-    true_val = list(sim_dict['same'].get_values())
-    false_val = list(sim_dict['diff'].get_values())
-    y_score = true_val + false_val
-
-    fpr, tpr, thresholds = roc_curve(y_true, y_score)
-
-    inst_auc = auc(fpr, tpr)
-
-    if plot_roc:
-        plt.figure()
-        plt.plot(fpr, tpr)
-        plt.plot([0, 1], [0, 1], color='navy', linestyle='--')
-        plt.figure(figsize=(10,10))
-
-        print('AUC', inst_auc)
-
     roc_data = {}
-    roc_data['true'] = y_true
-    roc_data['score'] = y_score
-    roc_data['fpr'] = fpr
-    roc_data['tpr'] = tpr
-    roc_data['thresholds'] = thresholds
-    roc_data['auc'] = inst_auc
+    if calc_roc:
+        # calc AUC
+        true_index = list(np.ones(sim_dict['same'].shape[0]))
+        false_index = list(np.zeros(sim_dict['diff'].shape[0]))
+        y_true = true_index + false_index
 
+        true_val = list(sim_dict['same'].get_values())
+        false_val = list(sim_dict['diff'].get_values())
+        y_score = true_val + false_val
+
+        fpr, tpr, thresholds = roc_curve(y_true, y_score)
+
+        inst_auc = auc(fpr, tpr)
+
+        if plot_roc:
+            plt.figure()
+            plt.plot(fpr, tpr)
+            plt.plot([0, 1], [0, 1], color='navy', linestyle='--')
+            plt.figure(figsize=(10,10))
+
+            print('AUC', inst_auc)
+
+        roc_data['true'] = y_true
+        roc_data['score'] = y_score
+        roc_data['fpr'] = fpr
+        roc_data['tpr'] = tpr
+        roc_data['thresholds'] = thresholds
+        roc_data['auc'] = inst_auc
 
     return sim_dict, pval_dict, roc_data
-
 
 def generate_signatures(df_ini, category_level, pval_cutoff=0.05,
                         num_top_dims=False, verbose=True, equal_var=False):
