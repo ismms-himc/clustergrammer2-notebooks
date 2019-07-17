@@ -1,4 +1,5 @@
 # Clustergrammer2 Notebooks
+This repository contains example Clustergrammer2 notebooks. The notebooks show how Clustergrammer2 can be used on datasets of increasing size and complexity.
 
 [![ccle_gif](https://github.com/MaayanLab/clustergrammer-docs/blob/master/docs/_static/clustergrammer2_480px.gif "demo_high-fr.gif")](https://mybinder.org/v2/gh/ismms-himc/clustergrammer2_examples/master?filepath=notebooks%2F2.0_CCLE_Gene_Expression.ipynb)
 
@@ -24,4 +25,6 @@ The `2.0_CCLE_Gene_Expression.ipynb` notebook uses Clustergrammer2 to visualize 
 ### 3.0 2,700 PBMC scRNA-seq
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ismms-himc/clustergrammer2_examples/master?filepath=notebooks%2F3.0_10X_Genomics_2700_Dataset.ipynb)
 
-https://nbviewer.jupyter.org/github/ismms-himc/clustergrammer2-notebooks/blob/master/notebooks/3.0_10X_Genomics_2700_Dataset_NBViewer.ipynb
+[![Nbviewer](https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/ismms-himc/clustergrammer2-notebooks/blob/master/notebooks/3.0_10X_Genomics_2700_Dataset_NBViewer.ipynb?flush_cache=true)
+
+
