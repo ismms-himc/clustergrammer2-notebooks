@@ -17,7 +17,7 @@ Additional examples can be found in Clustergrammer's [Case Studies and Tutorials
 
 [![Running Clustergrammer2](http://img.youtube.com/vi/UgO5LLvcfB0/0.jpg)](http://www.youtube.com/watch?v=UgO5LLvcfB0)
 
-Theis notebook shows how Clustergrammer2 can be used to load a small dataset and visualize a large random DataFrame. By running the notebook on MyBinder using [Jupyter Lab](https://mybinder.org/v2/gh/ismms-himc/clustergrammer2_examples/master?urlpath=lab) it can also be used to visualize a user uploaded dataset. Please see the video tutorial above for more information.
+This notebook shows how Clustergrammer2 can be used to load a small dataset and visualize a large random DataFrame. By running the notebook on MyBinder using [Jupyter Lab](https://mybinder.org/v2/gh/ismms-himc/clustergrammer2_examples/master?urlpath=lab) it can also be used to visualize a user uploaded dataset. Please see the video tutorial above for more information.
 
 ### 2.0 Cancer Cell Line Encyclopedia Bulk Gene Expression
 
