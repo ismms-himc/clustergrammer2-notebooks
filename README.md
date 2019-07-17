@@ -8,7 +8,7 @@ This repository contains several examples of Clustergrammer2 notebooks. The note
 
 Above is a GIF of notebook [2.0 Cancer Cell Line Encyclopedia Bulk Gene Expression](https://nbviewer.jupyter.org/github/ismms-himc/clustergrammer2-notebooks/blob/master/notebooks/2.0_CCLE_Gene_Expression.ipynb?flush_cache=True) exploring the Cancer Cell Line Encyclopedia gene expression data (data obtained from the [Broad-Institute](https://portals.broadinstitute.org/ccle)).
 
-Additional examples can be found in the Clustergrammer documentation: [Case Studies and Tutorials](https://clustergrammer.readthedocs.io/case_studies.html)
+Additional examples can be found in Clustergrammer's [Case Studies and Tutorials](https://clustergrammer.readthedocs.io/case_studies.html) documentation:
 
 
 ### 1.0 Running Clustergrammer2
