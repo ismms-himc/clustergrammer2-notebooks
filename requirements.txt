@@ -4,4 +4,5 @@ scipy
 scikit-learn
 ipywidgets
 matplotlib
+pyarrow
 clustergrammer2==0.4.2
