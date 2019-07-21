@@ -45,6 +45,6 @@ CITE-seq (a.k.a feature barcoding from 10X genomics) is a new method that enabel
 
 ### 5.2 2 Million Cell Mouse Organogenesis Cell Atlas
 
-<img src="https://github.com/ismms-himc/clustergrammer2-notebooks/blob/master/img/cao_2mil_screenshot.png" width="200">
+<img src="https://github.com/ismms-himc/clustergrammer2-notebooks/blob/master/img/cao_2mil_screenshot.png" width="500">
 
 [Cao, J and Spielmann, M et al](https://oncoscape.v3.sttrcancer.org/atlas.gs.washington.edu.mouse.rna/landing) profiled gene expression from ~2 million cells (~1.3 million non-doublets) between 9.5 and 13.5 days of gestation. They identified 38 major cell types and measured ~25,000 genes. We generated a downsampled view of this data representing the ~1.3 million single cells (~excluding 600K suspected doublets) in the dataset by averaging expression for each cell type in each embryo, resulting in ~2,000 cell-type and embryo representative clusters. We use Clustergrammer2 to explore this dataset in notebook 5.2.
