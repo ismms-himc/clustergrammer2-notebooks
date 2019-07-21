@@ -42,3 +42,9 @@ Single cell RNA-seq (scRNA-seq) is a powerful method to interrogate gene express
 [![10K PBMC CITE-seq](http://img.youtube.com/vi/oG9TunM1Bvw/0.jpg)](http://www.youtube.com/watch?v=oG9TunM1Bvw)
 
 CITE-seq (a.k.a feature barcoding from 10X genomics) is a new method that enabels researchers to simultaneously measure gene expression and protein levels in single cells. This notebook uses Clustergrammer2 to interactively explore an example dataset measuring the gene expression and surface marker proteins of 7,800 PBMCs obtained from [10X Genomics](https://www.10xgenomics.com/resources/datasets/). Cell type was assigned based on unbiased hierarchical clustering of cells in surface marker space (ADTs) and transferred to cells in gene expression space. Please see the video tutorial above for more information.
+
+### 5.2 2 Million Cell Mouse Organogenesis Cell Atlas
+
+![mouse_image](img/cao_2mil_screenshot.png)
+
+[Cao, J and Spielmann, M et al](https://oncoscape.v3.sttrcancer.org/atlas.gs.washington.edu.mouse.rna/landing) profiled gene expression from ~2 million cells (~1.3 million non-doublets) between 9.5 and 13.5 days of gestation. They identified 38 major cell types and measured ~25,000 genes. We generated a downsampled view of this data representing the ~1.3 million single cells (~excluding 600K suspected doublets) in the dataset by averaging expression for each cell type in each embryo, resulting in ~2,000 cell-type and embryo representative clusters. We use Clustergrammer2 to explore this dataset in notebook 5.2.
