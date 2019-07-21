@@ -1,0 +1,38 @@
+Chondrocytes & osteoblasts	104698
+Connective tissue progenitors	98964
+Intermediate Mesoderm	89518
+Jaw and tooth progenitors	82289
+Early mesenchyme	71949
+Excitatory neurons	68567
+Epithelial cells	66209
+Radial glia	65428
+Neural progenitor cells	58332
+Postmitotic premature neurons	56033
+Oligodendrocyte Progenitors	54606
+Isthmic organizer cells	48498
+Neural Tube	45985
+Inhibitory neurons	44658
+Myocytes	43197
+Definitive erythroid lineage	34205
+Chondroctye progenitors	33539
+Inhibitory neuron progenitors	31214
+Premature oligodendrocyte	29538
+Limb mesenchyme	26559
+Sensory neurons	26477
+Endothelial cells	26431
+Stromal cells	23259
+Osteoblasts	23223
+Schwann cell precursor	23145
+Granule neurons	16131
+Notochord cells	15481
+Primitive erythroid lineage	15138
+Inhibitory interneurons	13533
+Hepatocytes	11229
+White blood cells	9202
+Ependymal cell	8566
+Cholinergic neurons	7060
+Cardiac muscle lineages	4867
+Megakaryocytes	3572
+Melanocytes	2827
+Lens	1954
+Neutrophils	506
