@@ -5,4 +5,5 @@ scikit-learn
 ipywidgets
 matplotlib
 pyarrow
+bqplot
 clustergrammer2==0.4.2
