@@ -5,4 +5,4 @@ scikit-learn
 ipywidgets
 matplotlib
 pyarrow
-clustergrammer2==0.4.2
+clustergrammer2==0.5.0
