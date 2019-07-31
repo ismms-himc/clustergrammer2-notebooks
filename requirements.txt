@@ -5,5 +5,5 @@ scikit-learn
 ipywidgets
 matplotlib
 pyarrow
-bqplot
-clustergrammer2==0.4.2
+bqplot==bqplot=0.11.2
+clustergrammer2==0.5.0
