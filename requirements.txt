@@ -6,5 +6,4 @@ ipywidgets
 matplotlib
 pyarrow
 bqplot==0.11.2
-voila
 clustergrammer2==0.5.0
