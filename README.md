@@ -50,3 +50,12 @@ CITE-seq (a.k.a feature barcoding from 10X genomics) is a new method that enabel
 [![10K PBMC CITE-seq](http://img.youtube.com/vi/pNPxuPDavO8/0.jpg)](http://www.youtube.com/watch?v=pNPxuPDavO8)
 
 [Cao, J and Spielmann, M et al](https://oncoscape.v3.sttrcancer.org/atlas.gs.washington.edu.mouse.rna/landing) profiled gene expression from ~2 million mouse cells (~1.3 million non-doublets) between 9.5 and 13.5 days of gestation. They identified 38 major cell types and measured ~25,000 genes. We generated a downsampled view of this data representing the ~1.3 million single cells (~excluding 600K suspected doublets) in the dataset by averaging expression for each cell type in each embryo, resulting in ~2,000 cell-type and embryo representative clusters. We use Clustergrammer2 to explore this dataset in notebook 5.2. We demonstrate how Clustergrammer2 can be used to find genes associated with cell type clusters as well as identify genes that are differentially regulated across developmental stage.
+
+
+### 6.0 CODEX Mouse Spleen Dashboard
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ismms-himc/codex_dashboard/master?urlpath=voila%2Frender%2Findex.ipynb)
+
+<img src='img/codex_screenshot.png' alt="CODEX Example" width="800px" >
+
+[Goltsev et al](https://linkinghub.elsevier.com/retrieve/pii/S0092867418309048) used a highly multiplexed cytometric approach called CODEX to measure ~30 surface markers in spatially resolved single cells from mouse spleens. We utilized Clustergrammer2 to hierarchically cluster ~5,000 sinlge cells (from a subset of a segmented spleen image). We also used the Jupyter Widget [bqplot](https://github.com/bloomberg/bqplot) to visualize single cell location data using voronoi plots. We then built a dasnboard using the library [voila](https://github.com/QuantStack/voila), which converts Jupyter notebooks to dashboards/web-apps, and linked our heatmap to the spatial map. This allows to interact with the Clustergrammer2 heatmap and highlight cells in the spatially resolved map. These kind of linked views are crucial for exploration of spatially resolved high-dimensional single cell data. Finally, we are running this dashboard using MyBinder.
