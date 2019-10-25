@@ -1,5 +1,9 @@
 # Clustergrammer2 Notebooks
 
+### Lab Link
+[https://mybinder.org/v2/gh/ismms-himc/clustergrammer2-notebooks/version_0.5.3?urlpath=lab](https://mybinder.org/v2/gh/ismms-himc/clustergrammer2-notebooks/version_0.5.3?urlpath=lab)
+
+### Notebook Link
 [https://mybinder.org/v2/gh/ismms-himc/clustergrammer2-notebooks/version_0.5.3](https://mybinder.org/v2/gh/ismms-himc/clustergrammer2-notebooks/version_0.5.3)
 
 
