@@ -6,4 +6,4 @@ ipywidgets
 matplotlib
 pyarrow
 bqplot==0.11.2
-clustergrammer2==0.5.0
+clustergrammer2==0.5.9
