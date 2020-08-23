@@ -28,7 +28,7 @@ def filter_barcodes_by_umi(feature_data, feature_type, min_umi=0, max_umi=1e8,
         # filter barcodes
         barcodes = feature_data[feature_type]['barcodes']
         ser_barcodes = pd.Series(barcodes)
-        barcodes_filt = ser_barcodes[keep_indexes].get_values()
+        barcodes_filt = ser_barcodes[keep_indexes].values
 
         # return Dictionary of DataFrames
         filtered_data = {}
@@ -210,7 +210,7 @@ def load_v3_comp_sparse_feat_matrix(inst_path):
         # Separate feature lists
         ser_lines = pd.Series(lines)
         ser_lines_found = ser_lines[inst_indexes]
-        lines_found = ser_lines_found.get_values().tolist()
+        lines_found = ser_lines_found.values.tolist()
 
         # save feature lines
         feature_lines[inst_feat] = lines_found
