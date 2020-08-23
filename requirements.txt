@@ -6,4 +6,5 @@ ipywidgets
 matplotlib
 pyarrow
 bqplot==0.11.2
+statsmodels==0.11.1
 clustergrammer2==0.16.0
